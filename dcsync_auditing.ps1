@@ -1,5 +1,10 @@
 Import-Module ActiveDirectory
 
+# Mandatory Banner
+Write-Host 'Powershell' $PsVersionTable.PSVersion '-' (Get-date)
+Write-Host 'Auditing DC Sync Operations for Non-Standard Users'
+Write-Host ''
+
 # Modify Domain to Match Domain to be Audited
 cd 'AD:DC=CLIENT-DOMAIN,DC=LOCAL'
 
