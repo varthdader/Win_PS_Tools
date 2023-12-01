@@ -1,6 +1,11 @@
 # Script to mount an SMB shared volume with a user and password.
 # The password is called from a flat file and converted to a secure string before being stored into memory.
 
+# Mandatory Banner
+Write-Host 'Powershell' $PsVersionTable.PSVersion '-' (Get-date)
+Write-Host 'Mounting SMB Share....'
+Write-Host ''
+
 # Path to password file 
 # (Should contain only 1 line with a clear text password, ACL rights should be used to limit file access)
 $passwordFile = "C:\path\to\password.txt" 
