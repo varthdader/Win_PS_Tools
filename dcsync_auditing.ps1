@@ -1,5 +1,6 @@
 Import-Module ActiveDirectory
 
+# Modify Domain to Match Domain to be Audited
 cd 'AD:DC=CLIENT-DOMAIN,DC=LOCAL'
 
 # DS Events to Monitor For
